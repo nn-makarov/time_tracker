@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Time Tracker</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+      }
+      .endpoint {
+        background: #f5f5f5;
+        padding: 10px;
+        margin: 10px 0;
+        border-left: 4px solid #007bff;
+      }
+      .method {
+        font-weight: bold;
+        color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>⏰ Time Tracker API</h1>
+    <p>Бэкенд готов к работе! 🚀</p>
+
+    <h2>📡 API Endpoints:</h2>
+
+    <div class="endpoint">
+      <span class="method">POST</span> /api/register/ <br />Регистрация
+      пользователя
+    </div>
+
+    <div class="endpoint">
+      <span class="method">POST</span> /api/login/ <br />Вход в систему
+    </div>
+
+    <div class="endpoint">
+      <span class="method">POST</span> /api/logout/ <br />Выход из системы
+    </div>
+
+    <div class="endpoint">
+      <span class="method">POST</span> /api/records/ <br />Создание момента
+    </div>
+
+    <div class="endpoint">
+      <span class="method">GET</span>
+      /api/records/?from=YYYY-MM-DD&to=YYYY-MM-DD <br />Получение моментов за
+      период
+    </div>
+
+    <div class="endpoint">
+      <span class="method">DELETE</span> /api/records/1/ <br />Удаление момента
+    </div>
+
+    <h2>🛠️ Для тестирования:</h2>
+    <p>Используй Postman, curl или напиши простой фронтенд!</p>
+  </body>
+</html>
